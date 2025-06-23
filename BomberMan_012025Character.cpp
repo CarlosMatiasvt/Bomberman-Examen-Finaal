@@ -142,7 +142,7 @@ void ABomberMan_012025Character::ColocarBomba()
 		ComandoColocarBomba->Ejecutar();
 	}
 }
-
+//alterna el clima
 void ABomberMan_012025Character::AlternarClima()
 {
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green,
@@ -151,10 +151,12 @@ void ABomberMan_012025Character::AlternarClima()
 	{
 		if (GestorClima->EsDeDia)
 		{
+			// Cambiar a estado de noche
 			GestorClima->CambiarEstado(NewObject<UEstadoNoche>());
 		}
 		else
 		{
+			// Cambiar a estado de día
 			GestorClima->CambiarEstado(NewObject<UEstadoDia>());
 		}
 	}

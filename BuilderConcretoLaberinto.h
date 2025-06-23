@@ -24,7 +24,6 @@ ABuilderConcretoLaberinto();
 
 public:
 
-	// Constructor
 virtual void ConstruirLaberinto() override;
 virtual AActor* Clonar(UWorld* World, const FVector& Offset) override;
 UPROPERTY()

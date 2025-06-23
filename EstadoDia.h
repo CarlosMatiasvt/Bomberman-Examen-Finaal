@@ -18,8 +18,10 @@ class BOMBERMAN_012025_API UEstadoDia : public UObject, public IIEstadoClima
 public:
     virtual void AplicarEstado(AGestorClima* Gestor) override
     {
+		// Cambia el estado del gestor a día
         if (Gestor && Gestor->LuzDireccional)
         {
+			// Ajusta la intensidad de la luz direccional a un valor positivo para simular día
             Gestor->LuzDireccional->SetIntensity(10.0f);
             GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Ahora es de DÍA"));
         }

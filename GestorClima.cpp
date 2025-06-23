@@ -42,9 +42,11 @@ void AGestorClima::CambiarEstado(UObject* NuevoEstado)
 
     if (EstadoActual)
     {
+		// Verificar si el objeto implementa la interfaz IIEstadoClima
         IIEstadoClima* Estado = Cast<IIEstadoClima>(EstadoActual);
         if (Estado)
         {
+			// Aplicar el estado al gestor de clima
             Estado->AplicarEstado(this);
         }
         else

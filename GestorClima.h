@@ -23,6 +23,7 @@ public:
 
 	// Cambiar estado recibe un UObject que implemente la interfaz IEstadoClima
 	UFUNCTION()
+	// Cambia el estado del clima
 	void CambiarEstado(UObject* NuevoEstado);
 
 	// Variable para saber si es día o noche

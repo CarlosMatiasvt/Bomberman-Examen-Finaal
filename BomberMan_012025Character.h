@@ -44,6 +44,7 @@ public:
 	// Referencia al gestor de clima
 	AGestorClima* GestorClima;
 private:
+	// Variable para almacenar el estado actual del clima
 	IInterfaceBomba* ComandoColocarBomba;
 	
 protected:

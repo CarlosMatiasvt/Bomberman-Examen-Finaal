@@ -51,9 +51,9 @@ void ATrampaProxy::Activar()
 	// Verifica si la trampa real está disponible y si se permite la activación
     if (PermitirActivacion && TrampaReal)
     {
-        TrampaReal->Activar();
+		// Llama al método de activación de la trampa real
 		GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Green, TEXT("TRAMPA PROXY BIEN HECHA"));
-
+		TrampaReal->Activar();
     }
     else
     {

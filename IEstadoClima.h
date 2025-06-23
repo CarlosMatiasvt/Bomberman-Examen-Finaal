@@ -24,6 +24,7 @@ class BOMBERMAN_012025_API IIEstadoClima
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+	// Esta interfaz define el comportamiento de los estados del clima
 	virtual void AplicarEstado(class AGestorClima* Gestor) = 0;
 
 };

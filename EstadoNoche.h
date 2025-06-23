@@ -19,8 +19,10 @@ class BOMBERMAN_012025_API UEstadoNoche : public UObject, public IIEstadoClima
 public:
     virtual void AplicarEstado(AGestorClima* Gestor) override
     {
+		// Cambia el estado del gestor a noche
         if (Gestor && Gestor->LuzDireccional)
         {
+			// Ajusta la intensidad de la luz direccional a 0 para simular noche
             Gestor->LuzDireccional->SetIntensity(0.0f);
             GEngine->AddOnScreenDebugMessage(-1, 3, FColor::Yellow, TEXT("Ahora es de NOCHE"));
         }

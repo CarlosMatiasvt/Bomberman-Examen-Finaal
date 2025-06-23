@@ -31,6 +31,7 @@ void ATrampaReal::Activar()
 {
 	if (PermitirActivacion)
 	{
+		//activa la trampa
 		UE_LOG(LogTemp, Warning, TEXT("¡Trampa real activada!"));
 	}
 }
